@@ -10,7 +10,7 @@ $titolo = "Scuola By ZeroCalcare e l'Armadillo parlante";
 
 
 $censuraParola = $_GET["censura"];
-//$_GET["cazz"];
+
 
 $fraseCensurataArmadillo = str_replace($censuraParola, "***", $citazioneArmadillo);
 $fraseCensurataZerocalcare = str_replace($censuraParola, "***", $citazioneZeroCalcare);
@@ -53,10 +53,10 @@ $fraseCensurataZerocalcare = str_replace($censuraParola, "***", $citazioneZeroCa
                 echo "Lunghezza citazione censurata: " . " " . strlen($fraseCensurataZerocalcare) . " " . "caratteri";
             ?>
         </p>
+
         <hr>
+
         <h2>
-
-
             <?php
                 echo $citazioneArmadillo;
             ?>
@@ -66,15 +66,12 @@ $fraseCensurataZerocalcare = str_replace($censuraParola, "***", $citazioneZeroCa
                  echo "Lunghezza citazione: " . " " . strlen($citazioneArmadillo) . " " . "caratteri";
             ?>
         </p>
-
-        <hr>
         <h2>
 
             <?php
                 echo $fraseCensurataArmadillo
             ?>
         </h2>
-
         <p>
         <?php
                 echo "Lunghezza citazione censurata: " . " " . strlen($fraseCensurataArmadillo) . " " . "caratteri";
